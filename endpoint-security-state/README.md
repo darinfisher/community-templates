@@ -6,7 +6,7 @@ The dashboard displays the general availability for each endpoint along with the
 ![Endpoint Security State Dashboard Screenshot](endpoint-security-state.png)
 
 - "✅" Service is functioning as expected.
-- "🟡" Service needs attention. The certificate will expire in less than 30 day.
+- "🟡" Service needs attention. The certificate will expire in less than 30 days.
 - "🔴" Service is critical.  Endpoint is unavailable, certificate is or will expire in less than 1 day, or authentication is failing.
 - "❓" We could not determine the state of the service.
 
@@ -27,11 +27,9 @@ The dashboard displays the general availability for each endpoint along with the
 
 ### Install the template package
 From your [InfluxDB configured CLI environment](https://v2.docs.influxdata.com/v2.0/reference/cli/influx/config/):
-_*This URL will not work for this yet.*_  Verify after pull request is complete.
 ```
 influx apply --template-url https://raw.githubusercontent.com/influxdata/community-templates/master/endpoint-security-state/endpoint-security-state.yml
 ```
-Pull directly from my [template github repo](https://github.com/darinfisher/community-templates/tree/master/endpoint-security-state).
 
 ### Customize the Telegraf configuration
 Add the endpoints you would like to watch to specific input section(s).
@@ -52,4 +50,3 @@ Here are a few more possibilities for extending this template:
 - Email: dfisher@influxdata.com
 - Github: @darinfisher
 - Influx Slack: @dfisher
-
